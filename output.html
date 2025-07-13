@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>Form Output</title>
+</head>
+<body>
+<form>
+<div>
+  <label>FullName:</label><br>
+  <input type="text" name="FullName" required pattern="A-Za-z ]+" value="Vidath">
+</div>
+<div>
+  <label>About:</label><br>
+  <textarea name="About" rows=5" cols=40"></textarea>
+</div>
+<div>
+  <label>Age:</label><br>
+  <input type="number" name="Age" min="18" max="99" required>
+</div>
+<div>
+  <label>Email:</label><br>
+  <input type="email" name="Email" pattern=".+@.+\\..+" required>
+</div>
+<div>
+  <label>DOB:</label><br>
+  <input type="date" name="DOB" min=""2001-01-01"" max=""2022-12-31"" required>
+</div>
+<div>
+  <label>Country:</label><br>
+  <select name="Country" >
+    <option value="Sri Lanka">Sri Lanka</option>
+    <option value="India">India</option>
+    <option value="Other">Other</option>
+  </select>
+</div>
+<div>
+  <label>Gender:</label><br>
+  <input type="radio" name="Gender" value="Male"> Male<br>
+  <input type="radio" name="Gender" value="Female"> Female<br>
+  <input type="radio" name="Gender" value="Other"> Other<br>
+</div>
+<div>
+  <label>Password:</label><br>
+  <input type="password" name="Password" required pattern=".{8,}">
+</div>
+<div>
+  <label>Resume:</label><br>
+  <input type="file" name="Resume" accept=".pdf,.docx" required>
+</div>
+<div>
+  <label>ContactNumber:</label><br>
+  <input type="text" name="ContactNumber" required pattern="\\d{10}" value="0771234567">
+</div>
+<div>
+  <label>Agree:</label>
+  <input type="checkbox" name="Agree" value="true">
+</div>
+<div style="margin-top:20px;"><button type="submit">Submit</button></div>
+</form>
+</body>
+</html>

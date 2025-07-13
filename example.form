@@ -1,0 +1,15 @@
+form Registration {
+  section PersonalDetails {
+    field FullName: text required pattern="[A-Za-z ]+" default="Vidath";
+    field About: textarea rows=5 cols=40;
+    field Age: number min=18 max=99 required;
+    field Email: email pattern=".+@.+\\..+" required;
+    field DOB: date min="2001-01-01" max="2022-12-31" required;
+    field Country: dropdown options=["Sri Lanka", "India", "Other"];
+    field Gender: radio options=["Male", "Female", "Other"];
+    field Password: password required pattern=".{8,}";
+    field Resume: file accept=".pdf,.docx" required;
+    field ContactNumber: text required pattern="\\d{10}" default="0771234567";
+    field Agree: checkbox default=true;
+  }
+}
